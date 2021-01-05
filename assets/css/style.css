@@ -10,6 +10,7 @@ body {
 }
 
 #mainbody {
+  background-image: url("../../img/washing-machine-2668472_1920.jpg");
   background-color: white;
   background-attachment: scroll;
   background-repeat: no-repeat;
@@ -23,20 +24,24 @@ body {
   padding: 5px;
 }
 
-.additional_text {
+[additional_text] {
   font-size: 0.8em;
 }
 
-.header {
+#header {
   padding: 10px;
   background-color: black;
   opacity: 0.5;
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: black;
+  color: white;
   font-size: 14px;
   font-weight: normal;
   text-decoration: none;
   line-height: 1.6;
+}
+
+#header * {
+  opacity: 1;
 }
 
 #footer {
@@ -49,12 +54,28 @@ body {
   margin-top: 50px;
   background-color: black;
   width: 100%;
+  text-align: center;
 }
 
 iframe {
   width: 100%;
   border-style: none;
   overflow-y: hidden;
+}
+
+.menu_button {
+  text-align: center;
+  color: white;
+  font-size: 30px;
+  vertical-align: middle;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  color: white;
 }
 
 @media screen and (min-width: 768px) {
