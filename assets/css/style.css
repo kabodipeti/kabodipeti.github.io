@@ -42,6 +42,7 @@ body {
 
 #header * {
   opacity: 1;
+  height: 60px;
 }
 
 #footer {

@@ -5,22 +5,28 @@
 /*   $(document).ready(function() {
     $('#header_to_include').load('../../header.html');
 }); */
-
+var logging = true;
+var header = document.getElementById("header_to_include");
 window.onload = function(){
+getHeader();
+// header.addEventListener("load", getHeader());
+}
+
+function getHeader (){
 
   fetch("../../header.html")
   .then(response => {
     return response.text()
   })
   .then(data => {
-    document.querySelector("#header_to_include").innerHTML = data;
+    logger(document.getElementById("header_to_include").tagName);
+    document.getElementById("header_to_include").innerHTML = data;
   });
+  logger("header betöltve");
+}
 
-  fetch("../../head.html")
-  .then(response => {
-    return response.text()
-  }) 
-  .then(data => {
-    document.querySelector("#document_head").innerHTML = data;
-  });
+function logger(text){
+  if (logging){
+    console.log(text);
+  }
 }
