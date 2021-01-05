@@ -1,0 +1,22 @@
+@mixin borderedDiv($width: 1px, $style: none,$color: black, $rad: 0px){
+    border-style: $style;
+    border-width: $width;
+    border-color: $color;
+    border-radius: $rad;
+    background-color: $bg_color;
+    opacity: $opacity;
+    padding: $padding;
+} 
+@mixin normalDiv($bg_color: none, $opacity: 1, $padding: $defaultPadding){
+    padding: $padding;
+    background-color: $bg_color;
+    opacity: $opacity;
+}
+@mixin fontProperties($color: $mainFontColor, $fontFamily: $defaultFontFamily, $fontSize: $mainFontsize, $font-weight: normal, $text-decoration: none ){
+    font-family: $fontFamily;
+    color: $color;
+    font-size: $fontSize;
+    font-weight: $font-weight;
+    text-decoration: $text-decoration;
+    line-height: $defaultLineHeight;
+}
