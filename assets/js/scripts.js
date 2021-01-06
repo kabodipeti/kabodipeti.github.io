@@ -11,7 +11,11 @@ window.onload = function(){
 getHeader();
 // header.addEventListener("load", getHeader());
 }
-
+$('*').contents().each(function() {
+  if(this.nodeType === Node.COMMENT_NODE) {
+    $(this).remove();
+  }
+});
 function getHeader (){
 
   fetch("../../header.html")

@@ -4,6 +4,7 @@
 @import "mixins";
 *{
     box-sizing: border-box;
+    font-family: $defaultFontFamily;
 }
 
 
@@ -12,7 +13,7 @@ body {
     margin: 0px; 
 }
 #mainbody{
-     background-image: url("../../img/washing-machine-2668472_1920.jpg");
+    background-image: url("../../img/washing-machine-2668472_1920.jpg");
     background-color: white;
     background-attachment: scroll;
     background-repeat: no-repeat;
@@ -31,12 +32,14 @@ body {
     font-size: 0.8em;
 }
 #header{
-    @include normalDiv(rgb(0, 0, 0),0.5 , 10px ); 
+    @include normalDiv(rgb(0, 0, 0),0.7 , 10px ); 
     @include fontProperties($color: rgb(255, 255, 255));
 }
-#header * {
+#header > div {
     opacity: 1;
-    height: 60px;
+}
+.centered{
+    text-align: center;
 }
 #footer {
     @include fontProperties($color: $SecFontColor);
@@ -53,15 +56,34 @@ iframe {
     overflow-y : hidden;
 }
 .menu_button{
-    text-align: center;
+    opacity: 1;
     color: $SecFontColor;
-    font-size: 30px;
+    font-size: 22px;
     vertical-align: middle;
+    word-wrap: break-word;
+}
+.menu_button:hover{
+    background-color: $mainFontColor;
+    opacity: 1;
+    filter: brightness(200%);
 }
 a {
     text-decoration: none;
 }
 a:visited{
     color: $SecFontColor;
+}
+.menu{
+    text-align: center;
+    opacity: 1;
+    // display: flex;
+    // flex-wrap: wrap;
+    // align-items: baseline;
+    // justify-content: space-between;
+}
+#page_name{
+    margin: 0px;
+    opacity: 1;
+    @include fontProperties($fontSize: 2em, $color: $SecFontColor, $font-weight: bold);
 }
 @import "queries";
