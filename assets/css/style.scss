@@ -15,7 +15,7 @@ body {
 #mainbody{
     background-image: url("../../img/washing-machine-2668472_1920.jpg");
     background-color: white;
-    background-attachment: scroll;
+    background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -55,6 +55,10 @@ iframe {
     // min-height: 500px;
     overflow-y : hidden;
 }
+#logo{
+    opacity: 1;
+    width: 30px;
+}
 .menu_button{
     opacity: 1;
     color: $SecFontColor;
@@ -67,12 +71,11 @@ iframe {
     opacity: 1;
     filter: brightness(200%);
 }
-a {
+a, a:visited {
+    color: $SecFontColor;
     text-decoration: none;
 }
-a:visited{
-    color: $SecFontColor;
-}
+
 .menu{
     text-align: center;
     opacity: 1;
