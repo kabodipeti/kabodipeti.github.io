@@ -43,9 +43,9 @@ function init(){
   hideElement("#arak_content");
   removeComments();
   logger("init lefutott");
-  getDoc(aszfDoc, '#aszf_content');
-  getDoc(adatKezelesDoc, '#adatkezeles_content');
-  getDoc(arakDoc, '#arak_content');
+  // getDoc(aszfDoc, '#aszf_content');
+  // getDoc(adatKezelesDoc, '#adatkezeles_content');
+  // getDoc(arakDoc, '#arak_content');
 }
 
 function toggleElement(selector, speed = "fast"){

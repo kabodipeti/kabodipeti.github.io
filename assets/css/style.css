@@ -30,7 +30,6 @@ body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: black;
 }
 
 body {
@@ -75,7 +74,7 @@ body {
 }
 
 #bejelentes iframe {
-  min-height: 350px;
+  min-height: 600px;
 }
 
 .centered {
@@ -95,11 +94,12 @@ body {
   text-align: center;
 }
 
-[id*="_content"] {
+[id$="_content"] {
+  background-color: black;
   color: white;
-  text-align: center;
+  text-align: left;
   opacity: 0.7;
-  padding: 2px;
+  padding: 15px;
   margin: 10px;
 }
 

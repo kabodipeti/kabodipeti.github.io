@@ -9,7 +9,6 @@
 *{
     box-sizing: border-box;
     font-family: $defaultFontFamily;
-    color: $mainFontColor;
 }
 body{
     background-image: url("../../img/mosogep_hatter.png");
@@ -42,7 +41,7 @@ body{
     opacity: 1;
 }
 #bejelentes iframe{
-    min-height:350px;
+    min-height:600px;
 }
 .centered{
     text-align: center;
@@ -55,11 +54,12 @@ body{
     text-align: center;
     
 }
-[id*="_content"]{
-    color: $SecFontColor;
-    text-align: center;
+[id$="_content"]{
+    background-color: $mainFontColor;
+    color: white;
+    text-align: left;
     opacity: 0.7;
-    padding: 2px;
+    padding: 15px;
     margin: 10px;
 }
 iframe {
