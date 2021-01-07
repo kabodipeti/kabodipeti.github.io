@@ -32,6 +32,11 @@ body {
   font-size: 0.8em;
 }
 
+section {
+  width: 100%;
+  height: 100vw;
+}
+
 #mainbody {
   background-image: url("../../img/mosogep_hatter.png");
   background-color: white;
@@ -90,7 +95,9 @@ iframe {
   color: white;
   font-size: 22px;
   vertical-align: middle;
-  word-wrap: break-word;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 .menu_button:hover {
@@ -176,7 +183,6 @@ a, a:visited {
 }
 
 [class*="mobile_menu"], #mobile_menu_button {
-  display: block;
   color: white;
   text-align: center;
   padding: 5px;
@@ -232,6 +238,12 @@ a, a:visited {
   .card {
     width: 400px;
     height: 400px;
+  }
+  .card_container {
+    margin-top: 100px;
+  }
+  #up_nav {
+    width: 100px;
   }
 }
 /*# sourceMappingURL=style.css.map */

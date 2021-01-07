@@ -40,7 +40,12 @@ function getHTMLfromFile (htmlPath, targetID, callBack){
   
 function addEventListenersForHeader(){
   $("#mobile_menu_button").click(toggleMobileMenu);
-  hideMobileMenu();
+  if ($(window).width() <= 768){
+    hideElement(".mobile_menu");
+  }
+  if ($(window).width() >= 768){
+    showElement(".mobile_menu");
+  }
   logger("addEventListeners lefutott");
 }
 
@@ -48,11 +53,15 @@ function toggleMobileMenu(){
     $(".mobile_menu").slideToggle("fast");
     logger("mobilos menü toggle");
 }
-function hideMobileMenu(){
-  $(".mobile_menu").hide();
-  logger("mobilos menü elrejtve");
-}
 
+function hideElement(selector){
+  $(selector).hide();
+  logger( selector + " elrejtve");
+}
+function showElement(selector){
+  $(selector).show();
+  logger( selector + " megjelenítve");
+}
 /* kommentek eltávolítása */
 function removeComments(){
   $('*').contents().each(function() {
