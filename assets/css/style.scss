@@ -78,7 +78,7 @@ a, a:visited {
     color: $SecFontColor;
 }
 #home_content h1{
-    
+    margin: 50px 0 30px 0;
     color: $mainFontColor;
 }
 .card_container{
@@ -87,6 +87,7 @@ a, a:visited {
      align-items: center;
      align-content: space-between;
      flex-wrap: wrap;
+     margin-top: 100px;
      
 }
 .card{
@@ -95,9 +96,15 @@ a, a:visited {
     height: 400px;
     color: $SecFontColor;
     text-align: center;
+    display: flex;
+    align-content:stretch;
     padding: 30px;
     opacity: 0.7;
     margin: 10px;
+}
+.card div {
+    align-self: center;
+    font-size: 1.5em;
 }
 [class*="mobile_menu"]{
     display: block;
