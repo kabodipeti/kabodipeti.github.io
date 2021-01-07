@@ -35,5 +35,11 @@
   .col-12 {
     width: 100%;
   }
+  .only_desktop {
+    display: block;
+  }
+  .only_mobile {
+    display: none;
+  }
 }
 /*# sourceMappingURL=queries.css.map */

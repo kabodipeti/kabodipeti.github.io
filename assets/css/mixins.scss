@@ -1,11 +1,10 @@
-@mixin borderedDiv($width: 1px, $style: none,$color: black, $rad: 0px){
+@mixin borderedDiv($width: 1px,$bg_color: white,$style: none,$color: black, $rad: 0px){
+    @include normalDiv();
     border-style: $style;
     border-width: $width;
     border-color: $color;
     border-radius: $rad;
     background-color: $bg_color;
-    opacity: $opacity;
-    padding: $padding;
 } 
 @mixin normalDiv($bg_color: none, $opacity: 1, $padding: $defaultPadding){
     padding: $padding;

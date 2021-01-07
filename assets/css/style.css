@@ -5,17 +5,21 @@
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   padding: 0px;
   margin: 0px;
 }
 
-#mainbody {
-  background-color: white;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+.only_mobile {
+  display: block;
+}
+
+.only_desktop {
+  display: none;
 }
 
 [class*="col-"] {
@@ -26,6 +30,15 @@ body {
 
 [additional_text] {
   font-size: 0.8em;
+}
+
+#mainbody {
+  background-image: url("../../img/mosogep_hatter.png");
+  background-color: white;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 #header {
@@ -69,7 +82,7 @@ iframe {
 
 #logo {
   opacity: 1;
-  width: 30px;
+  width: 35px;
 }
 
 .menu_button {
@@ -108,6 +121,54 @@ a, a:visited {
   line-height: 1.6;
 }
 
+#home_content {
+  color: white;
+}
+
+#home_content h1 {
+  color: black;
+}
+
+.card_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.card {
+  padding: 5px;
+  background-color: none;
+  opacity: 1;
+  border-style: solid;
+  border-width: 1px;
+  border-color: black;
+  border-radius: 30px;
+  background-color: black;
+  width: 400px;
+  height: 400px;
+  color: white;
+  text-align: center;
+  padding: 30px;
+  opacity: 0.7;
+  margin: 10px;
+}
+
+[class*="mobile_menu"], #mobile_menu_button {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 5px;
+}
+
 @media screen and (min-width: 768px) {
   .col-1 {
     width: 8.33%;
@@ -144,6 +205,12 @@ a, a:visited {
   }
   .col-12 {
     width: 100%;
+  }
+  .only_desktop {
+    display: block;
+  }
+  .only_mobile {
+    display: none;
   }
 }
 /*# sourceMappingURL=style.css.map */
