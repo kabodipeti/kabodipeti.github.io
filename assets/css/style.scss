@@ -109,4 +109,7 @@ a, a:visited {
 #mobile_menu_button{
     @extend [class*="mobile_menu"];
 }
+#menu_button{
+    width: 30px;
+}
 @import "queries";
