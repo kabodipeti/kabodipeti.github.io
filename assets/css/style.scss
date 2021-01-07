@@ -1,11 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
 
 @import "variables";
-@import "misc";
 @import "mixins";
+@import "misc";
 
 
 
+*{
+    box-sizing: border-box;
+     font-family: $defaultFontFamily;
+}
 #mainbody{
     background-image: url("../../img/mosogep_hatter.png");
     background-color: white;
@@ -22,6 +26,9 @@
 }
 #header > div {
     opacity: 1;
+}
+#bejelentes iframe{
+    min-height:350px;
 }
 .centered{
     text-align: center;
@@ -107,7 +114,7 @@ a, a:visited {
     font-size: 1.5em;
 }
 [class*="mobile_menu"]{
-    // display: block;
+     display: block;
     color: $SecFontColor;
     text-align: center;
     padding: 5px;

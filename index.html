@@ -15,7 +15,40 @@
  
 <body id="mainbody">
     
-    <div id="header_to_include"></div>
+    <div id="header" class="col-12">
+        <div class="col-3 centered">
+            <a href="/">
+                <p class="col-12" id="page_name"><img id="logo" src="img/orczylogo.svg"> márka-szerviz.hu</p>
+            </a>
+            <div id="page_name_alt" class="col-12">Orczy háztartási gép alkatrészáruház és szerviz</div>
+        </div>
+
+        <div id="mobile_menu_button" class="only_mobile">
+            <span style="float: right;"></span>
+            <img id="menu_button" width="30" src="img/MENU_FEHER.png" style="float: right;" />
+        </div>
+
+        <div class="col-9 menu">
+            <div class="menu_button mobile_menu col-2">
+                <a  href="#szerviz" target="_parent">Szerviz szolgáltatás</a>
+            </div>
+            <div class="menu_button mobile_menu col-2">
+                <a href="#arak" target="_parent">Árak</a>
+            </div>
+            <div class="menu_button mobile_menu col-2">
+                <a href="#rolunk" target="_parent">Rólunk</a>
+            </div>
+            <div class="menu_button mobile_menu col-2">
+                <a href="#bejelentes">Online hibabejelentés</a>
+            </div>
+            <div class="menu_button mobile_menu col-2">
+                <a href="#footer_to_include" target="_parent">Segítség</a>
+            </div>
+      
+            
+        </div>
+    </div>
+
     <section id="home_content">
         <h1 class="col-12 centered">Szerelőre lenne szüksége háztartási gépéhez?</h1>
 
@@ -40,10 +73,7 @@
             Integer vitae felis eu sem sodales rhoncus. Donec lacinia congue purus sed luctus. Suspendisse tortor mauris, porttitor a nisl vitae, semper dictum ante. Sed vulputate lectus eget enim finibus, ac congue turpis pharetra. Sed id urna ullamcorper, pretium lectus sed, lobortis est. Aliquam tempus, diam eu aliquet rutrum, augue velit vulputate mauris, quis fringilla libero tellus eu purus. Phasellus consequat consectetur diam, in maximus leo. Phasellus vehicula rhoncus odio, vitae sodales nulla viverra a. Duis dignissim turpis at gravida volutpat. Maecenas in convallis lectus, vitae congue lorem. Donec ultricies, turpis non laoreet mollis, nulla sem rutrum felis, id volutpat quam odio non nunc. Vivamus hendrerit mauris pulvinar, porttitor est vel, laoreet velit. Proin malesuada nibh nisl, id congue orci sodales cursus. Praesent quis dignissim orci.
         </div>
     </section>
-    <section  id="bejelentes">
-        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeJ0NqNgQTrsGTh1uh-48vhLrzjdP00l95-7B_mXDBvCZJkNg/viewform?embedded=true" width="90%" height="500" frameborder="0" marginheight="0" marginwidth="0">Betöltés…</iframe>
-
-    </section>
+  
     <section id="szerviz">
 
         <div>SZERVIZ 
@@ -59,8 +89,10 @@ Ut non nibh turpis. Fusce aliquam leo ut massa tristique, et imperdiet nibh pret
 
 Integer vitae felis eu sem sodales rhoncus. Donec lacinia congue purus sed luctus. Suspendisse tortor mauris, porttitor a nisl vitae, semper dictum ante. Sed vulputate lectus eget enim finibus, ac congue turpis pharetra. Sed id urna ullamcorper, pretium lectus sed, lobortis est. Aliquam tempus, diam eu aliquet rutrum, augue velit vulputate mauris, quis fringilla libero tellus eu purus. Phasellus consequat consectetur diam, in maximus leo. Phasellus vehicula rhoncus odio, vitae sodales nulla viverra a. Duis dignissim turpis at gravida volutpat. Maecenas in convallis lectus, vitae congue lorem. Donec ultricies, turpis non laoreet mollis, nulla sem rutrum felis, id volutpat quam odio non nunc. Vivamus hendrerit mauris pulvinar, porttitor est vel, laoreet velit. Proin malesuada nibh nisl, id congue orci sodales cursus. Praesent quis dignissim orci.
         </div>
-        <div id="arak">ÁRAK   
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia dolor at nulla posuere, at tristique ipsum sodales. Morbi quis odio faucibus, venenatis enim vel, commodo lorem. Nam efficitur, nunc quis tincidunt rutrum, sapien dui condimentum lectus, sed laoreet elit felis quis magna. Curabitur vulputate nulla ac nulla ultricies sagittis. In nec vehicula justo. Aenean eget viverra urna. Vestibulum ornare dui nec erat cursus gravida.
+    </section>
+
+    <section id="arak">ÁRAK   
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia dolor at nulla posuere, at tristique ipsum sodales. Morbi quis odio faucibus, venenatis enim vel, commodo lorem. Nam efficitur, nunc quis tincidunt rutrum, sapien dui condimentum lectus, sed laoreet elit felis quis magna. Curabitur vulputate nulla ac nulla ultricies sagittis. In nec vehicula justo. Aenean eget viverra urna. Vestibulum ornare dui nec erat cursus gravida.
 
 Fusce ut neque libero. Aenean vel bibendum dolor, in varius orci. Vestibulum maximus massa lectus, at vestibulum tortor blandit aliquam. Aliquam vulputate maximus justo blandit porttitor. Aliquam tempor justo lectus, et vulputate dui vulputate in. Phasellus porttitor nisl nibh, id suscipit velit feugiat vel. Aliquam erat volutpat. Nunc aliquam vestibulum aliquam. Ut scelerisque nisi at congue sollicitudin.
 
@@ -71,9 +103,26 @@ Donec sagittis nibh justo, nec sodales tellus condimentum et. Suspendisse vitae 
 Ut non nibh turpis. Fusce aliquam leo ut massa tristique, et imperdiet nibh pretium. In nec vehicula diam. Praesent odio ex, congue mattis odio ut, pulvinar malesuada mi. Nam elementum purus nunc, at sagittis diam fermentum et. Quisque dignissim erat ut gravida ultricies. Cras ac interdum tellus. Quisque a mauris mi. Nunc convallis, dolor ut viverra mattis, nisi tortor scelerisque metus, eu tincidunt sem justo ac mi. Fusce maximus, nulla et dapibus gravida, risus enim consequat elit, et hendrerit mauris nunc lobortis magna. Duis enim leo, congue vitae quam eu, porttitor condimentum lectus.
 
 Integer vitae felis eu sem sodales rhoncus. Donec lacinia congue purus sed luctus. Suspendisse tortor mauris, porttitor a nisl vitae, semper dictum ante. Sed vulputate lectus eget enim finibus, ac congue turpis pharetra. Sed id urna ullamcorper, pretium lectus sed, lobortis est. Aliquam tempus, diam eu aliquet rutrum, augue velit vulputate mauris, quis fringilla libero tellus eu purus. Phasellus consequat consectetur diam, in maximus leo. Phasellus vehicula rhoncus odio, vitae sodales nulla viverra a. Duis dignissim turpis at gravida volutpat. Maecenas in convallis lectus, vitae congue lorem. Donec ultricies, turpis non laoreet mollis, nulla sem rutrum felis, id volutpat quam odio non nunc. Vivamus hendrerit mauris pulvinar, porttitor est vel, laoreet velit. Proin malesuada nibh nisl, id congue orci sodales cursus. Praesent quis dignissim orci.
-        </div>
     </section>
-   <!-- #include virtual="szerviz.html" -->
-    <div id="footer_to_include"></div>
+    
+    <section  id="bejelentes">
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeJ0NqNgQTrsGTh1uh-48vhLrzjdP00l95-7B_mXDBvCZJkNg/viewform?embedded=true" width="90%"
+              frameborder="0" marginheight="0" marginwidth="0">Betöltés…
+        </iframe>
+
+    </section>
+   
+    
     <div id="up_nav"  style="position: fixed; right: 50px; bottom: 50px;"><a href="#header"><img src="img/up_arrow.jpg"  width="100%"></a></div>
+
+    <footer class="col-12" id="footer">
+        <div class="col-4">
+            <p id="cegnev"></p> 
+            <div>Telefonos ügyfélszolgálat: <span id="telefon"> + 36 1 333 0302</span></div>
+            <div id="ugyfelszolg_elerhetoseg" additional_text>Hétfőtől péntekig 08:00 -17:00 óráig hívható</div>
+        </div>
+        <div class="col-4">Második oszlop</div>
+        <div class="col-4">harmadik oszlop</div>
+    
+    </footer>
 </body>

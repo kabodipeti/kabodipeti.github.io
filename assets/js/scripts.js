@@ -14,15 +14,15 @@ var header = document.getElementById("header_to_include");
 $(document).ready(function(){
   var d = new Date();
   var start = d.getTime();
-  getHTMLfromFile("../../header.html", "header_to_include", addEventListenersForHeader);
-  getHTMLfromFile("../../footer.html", "footer_to_include");
+  // getHTMLfromFile("../../header.html", "header_to_include", addEventListenersForHeader);
+  // getHTMLfromFile("../../footer.html", "footer_to_include");
  
   // var mainContextText = getJSON("../../data/proba.json");
   // logger(mainContextText);
 
   // getHTMLfromFile("../../data/proba.json", "peti");
   // logger("peti: " + mainContext.cegnev);
-  removeComments();
+
   init();
   var d2 = new Date();
   var end = d2.getTime();
@@ -30,23 +30,23 @@ $(document).ready(function(){
   logger("script lefutott: " + duration + " ms alatt");
   });
 
-function init(){
-  logger("initializálás");
- 
-}
+
 function getHTMLfromFile (htmlPath, targetID, callBack){ 	
   $("#" +  targetID ).load(htmlPath, callBack);
 }
   
-function addEventListenersForHeader(){
+function init(){
   $("#mobile_menu_button").click(toggleMobileMenu);
+
   if ($(window).width() <= 768){
     hideElement(".mobile_menu");
   }
   if ($(window).width() >= 768){
     showElement(".mobile_menu");
   }
-  logger("addEventListeners lefutott");
+  removeComments();
+  logger("init lefutott");
+
 }
 
 function toggleMobileMenu(){

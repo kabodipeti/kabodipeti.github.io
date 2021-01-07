@@ -1,8 +1,31 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  padding: 0px;
+  margin: 0px;
+}
+
 .only_mobile {
   display: block;
 }
 
 .only_desktop {
   display: none;
+}
+
+[class*="col-"] {
+  width: 100%;
+  float: left;
+  padding: 5px;
+}
+
+[additional_text] {
+  font-size: 0.8em;
+}
+
+section {
+  width: 100%;
 }
 /*# sourceMappingURL=misc.css.map */
