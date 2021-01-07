@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 *{
     box-sizing: border-box;
     font-family: $defaultFontFamily;
@@ -25,4 +26,33 @@ body {
 [additional_text]{
     
     font-size: 0.8em;
+=======
+*{
+    box-sizing: border-box;
+    font-family: $defaultFontFamily;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+body {
+    padding: 0px;
+    margin: 0px; 
+}
+.only_mobile{
+    display: block;
+}
+.only_desktop{
+    display: none;
+}
+[class*="col-"] {
+    width: 100%; 
+    float: left; 
+    padding: 5px;
+}  
+
+[additional_text]{
+    
+    font-size: 0.8em;
+>>>>>>> 853e96a42b06848f3724d0616b4e61f4529484dc
 }

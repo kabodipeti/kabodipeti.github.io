@@ -163,7 +163,10 @@ a, a:visited {
 }
 
 [class*="mobile_menu"], #mobile_menu_button {
+<<<<<<< HEAD
   display: block;
+=======
+>>>>>>> 853e96a42b06848f3724d0616b4e61f4529484dc
   color: white;
   text-align: center;
   padding: 5px;
