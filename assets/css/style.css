@@ -143,7 +143,6 @@ a, a:visited {
       align-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin-top: 100px;
 }
 
 .card {
@@ -155,8 +154,8 @@ a, a:visited {
   border-color: black;
   border-radius: 30px;
   background-color: black;
-  width: 400px;
-  height: 400px;
+  width: 200;
+  height: 200;
   color: white;
   text-align: center;
   display: -webkit-box;
@@ -229,6 +228,10 @@ a, a:visited {
   }
   .only_mobile {
     display: none;
+  }
+  .card {
+    width: 400px;
+    height: 400px;
   }
 }
 /*# sourceMappingURL=style.css.map */

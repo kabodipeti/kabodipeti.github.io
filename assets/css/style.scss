@@ -87,13 +87,13 @@ a, a:visited {
      align-items: center;
      align-content: space-between;
      flex-wrap: wrap;
-     margin-top: 100px;
+     
      
 }
 .card{
     @include borderedDiv($bg_color:black, $style: solid, $rad: 30px);
-    width: 400px;
-    height: 400px;
+    width: 200;
+    height: 200;
     color: $SecFontColor;
     text-align: center;
     display: flex;
