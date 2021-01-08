@@ -12,7 +12,6 @@
 }
 body{
     background-image: url("../../img/mosogep_hatter.png");
-   
     background-attachment: fixed;
     background-repeat: repeat-y;
     transition: 0s linear;
@@ -59,6 +58,7 @@ body{
     opacity: 0.7;
     padding: 15px;
     margin: 10px;
+    width: 97%;
 }
 iframe {
     width: 100%;
@@ -90,10 +90,6 @@ a, a:visited {
 .menu{
     text-align: center;
     opacity: 1;
-    // display: flex;
-    // flex-wrap: wrap;
-    // align-items: baseline;
-    // justify-content: space-between;
 }
 #page_name{
     margin: 0px;
@@ -130,16 +126,6 @@ a, a:visited {
 .card div {
     align-self: center;
     
-}
-[class*="mobile_menu"]{
-     display: block;
-    color: $SecFontColor;
-    text-align: center;
-    padding: 5px;
-}
-
-#mobile_menu_button{
-    @extend [class*="mobile_menu"];
 }
 #menu_button{
     width: 30px;

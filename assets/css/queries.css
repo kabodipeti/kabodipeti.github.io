@@ -65,5 +65,54 @@
     width: 30px;
     height: 30px;
   }
+  #info_box {
+    display: none;
+    position: absolute;
+    float: none;
+    right: 10px;
+  }
+  .tel_header {
+    font-weight: bold;
+    color: green;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .mob-1 {
+    width: 8.33%;
+  }
+  .mob-2 {
+    width: 16.66%;
+  }
+  .mob-3 {
+    width: 25%;
+  }
+  .mob-4 {
+    width: 33.33%;
+  }
+  .mob-5 {
+    width: 41.66%;
+  }
+  .mob-6 {
+    width: 50%;
+  }
+  .mob-7 {
+    width: 58.33%;
+  }
+  .mob-8 {
+    width: 66.66%;
+  }
+  .mob-9 {
+    width: 75%;
+  }
+  .mob-10 {
+    width: 83.33%;
+  }
+  .mob-11 {
+    width: 91.66%;
+  }
+  .mob-12, .mobile_menu {
+    width: 100%;
+  }
 }
 /*# sourceMappingURL=queries.css.map */
