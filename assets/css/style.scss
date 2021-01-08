@@ -90,7 +90,8 @@ a, a:visited {
 }
 #home_text{
     position: relative;
-    @include animations($name: comesFromTop, $duration: 2s);
+    top: 40px;
+    @include animations($name: comesFromTop, $duration: 1.3s);
 }
 .menu{
     text-align: center;
@@ -117,8 +118,8 @@ a, a:visited {
      
 }
 .card{
-    @include borderedDiv($bg_color:black, $style: solid, $rad: 30px);
-    @include animations($name: fadeIn, $duration: 2s);
+    @include borderedDiv($bg_color:black, $style: solid, $rad: 10px);
+    @include animations($name: fadeIn, $duration: 1.3s);
     opacity: 0.7;
     width: 200;
     height: 200;
