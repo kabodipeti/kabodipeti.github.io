@@ -18,8 +18,7 @@
 
 @-webkit-keyframes comesFromTop {
   0% {
-    position: relative;
-    top: -1000px;
+    top: 300%;
   }
   100% {
     top: default;
@@ -28,8 +27,7 @@
 
 @keyframes comesFromTop {
   0% {
-    position: relative;
-    top: -1000px;
+    top: 300%;
   }
   100% {
     top: default;

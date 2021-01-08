@@ -18,8 +18,7 @@
 
 @-webkit-keyframes comesFromTop {
   0% {
-    position: relative;
-    top: -1000px;
+    top: 300%;
   }
   100% {
     top: default;
@@ -28,8 +27,7 @@
 
 @keyframes comesFromTop {
   0% {
-    position: relative;
-    top: -1000px;
+    top: 300%;
   }
   100% {
     top: default;
@@ -184,14 +182,6 @@ a, a:visited {
 
 #home_text {
   position: relative;
-  -webkit-animation-name: fadeIn;
-          animation-name: fadeIn;
-  -webkit-animation-duration: 1.7s;
-          animation-duration: 1.7s;
-  -webkit-animation-delay: 0s;
-          animation-delay: 0s;
-  -webkit-animation-iteration-count: 1;
-          animation-iteration-count: 1;
 }
 
 .menu {
@@ -244,8 +234,8 @@ a, a:visited {
   background-color: black;
   -webkit-animation-name: fadeIn;
           animation-name: fadeIn;
-  -webkit-animation-duration: 1.7s;
-          animation-duration: 1.7s;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
   -webkit-animation-delay: 0s;
           animation-delay: 0s;
   -webkit-animation-iteration-count: 1;
@@ -276,8 +266,8 @@ a, a:visited {
 
 section {
   width: 100%;
-  margin-top: 40px;
   float: left;
+  height: 100vw;
 }
 
 #up_nav {
@@ -360,7 +350,7 @@ section {
   }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 768px) {
   .mob-1 {
     width: 8.33%;
   }

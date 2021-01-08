@@ -91,7 +91,7 @@ a, a:visited {
 #home_text{
     position: relative;
     // margin: auto;
-    @include animations($name: fadeIn, $duration: 1.7s);
+    // @include animations($name: comesFromTop, $duration: 2s);
 }
 .menu{
     text-align: center;
@@ -119,7 +119,7 @@ a, a:visited {
 }
 .card{
     @include borderedDiv($bg_color:black, $style: solid, $rad: 10px);
-    @include animations($name: fadeIn, $duration: 1.7s);
+    @include animations($name: fadeIn, $duration: 3s);
     opacity: 0.7;
     width: 200;
     height: 200;
@@ -140,8 +140,9 @@ a, a:visited {
 } 
 section {
     width: 100%;
-    margin-top: 40px;
+    // margin-top: 40px;
     float: left; 
+    height: 100vw;
 }
 
 #up_nav{
