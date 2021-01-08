@@ -184,11 +184,10 @@ a, a:visited {
 
 #home_text {
   position: relative;
-  top: 40px;
-  -webkit-animation-name: comesFromTop;
-          animation-name: comesFromTop;
-  -webkit-animation-duration: 1.3s;
-          animation-duration: 1.3s;
+  -webkit-animation-name: fadeIn;
+          animation-name: fadeIn;
+  -webkit-animation-duration: 1.7s;
+          animation-duration: 1.7s;
   -webkit-animation-delay: 0s;
           animation-delay: 0s;
   -webkit-animation-iteration-count: 1;
@@ -245,8 +244,8 @@ a, a:visited {
   background-color: black;
   -webkit-animation-name: fadeIn;
           animation-name: fadeIn;
-  -webkit-animation-duration: 1.3s;
-          animation-duration: 1.3s;
+  -webkit-animation-duration: 1.7s;
+          animation-duration: 1.7s;
   -webkit-animation-delay: 0s;
           animation-delay: 0s;
   -webkit-animation-iteration-count: 1;
@@ -288,7 +287,7 @@ section {
   width: 50px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 767px) {
   .col-1 {
     width: 8.33%;
   }
@@ -356,9 +355,12 @@ section {
     font-weight: bold;
     font-size: 1.1em;
   }
+  #home_text {
+    top: 50px;
+  }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 400px) {
   .mob-1 {
     width: 8.33%;
   }
@@ -397,6 +399,9 @@ section {
   }
   .mobile_menu {
     width: 100%;
+  }
+  .card {
+    padding: 15px;
   }
 }
 /*# sourceMappingURL=style.css.map */

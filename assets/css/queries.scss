@@ -1,4 +1,4 @@
-@media screen and (min-width: 768px){
+@media screen and (min-width: 767px){
     .col-1 {width: 8.33%;}
     .col-2, .menu_button {width: 16.66%;}
     .col-3 {width: 25%;} 
@@ -43,9 +43,12 @@
         font-weight: bold; 
         font-size: 1.1em; 
     }
+    #home_text{
+        top: 50px;
+    }
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 400px){
     .mob-1 {width: 8.33%;}
     .mob-2 {width: 16.66%;}
     .mob-3 {width: 25%;} 
@@ -59,4 +62,7 @@
     .mob-11 {width: 91.66%;}
     .mob-12 {width: 100%;}
     .mobile_menu {width: 100%;}
+    .card{
+        padding: 15px;
+    }
 }

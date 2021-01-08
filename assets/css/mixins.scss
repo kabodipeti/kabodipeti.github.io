@@ -19,7 +19,7 @@
     text-decoration: $text-decoration;
     line-height: $defaultLineHeight;
 }
-@mixin animations($name: fadesIn, $duration : 2s, $delay: 0s, $count: 1){
+@mixin animations($name: fadeIn, $duration : 2s, $delay: 0s, $count: 1){
     animation-name: $name;
     animation-duration: $duration;
     animation-delay: $delay;
