@@ -88,7 +88,10 @@ a, a:visited {
     color: $SecFontColor;
     text-decoration: none;
 }
-
+#home_text{
+    position: relative;
+    @include animations($name: comesFromTop, $duration: 2s);
+}
 .menu{
     text-align: center;
     opacity: 1;
@@ -115,9 +118,8 @@ a, a:visited {
 }
 .card{
     @include borderedDiv($bg_color:black, $style: solid, $rad: 30px);
-    animation-name: fadeIn;
-    animation-duration: 1.5s;
-    animation-fill-mode: forwards;
+    @include animations($name: fadeIn, $duration: 2s);
+    opacity: 0.7;
     width: 200;
     height: 200;
     color: $SecFontColor;
@@ -125,7 +127,7 @@ a, a:visited {
     display: flex;
     align-content:stretch;
     padding: 30px;
-    opacity: 0.7;
+    
     margin: 10px;
 }
 .card div {
