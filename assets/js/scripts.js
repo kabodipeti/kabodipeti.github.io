@@ -57,7 +57,7 @@ function toggleArak(){
   toggleElement("#arak_content", "fast");
 }
 function toggleASZF(){
-  toggleElement("#aszf_content", "fast");
+  toggleElement("#aszf_content", "normal");
 }
 
 function toggleAdatkezeles(){

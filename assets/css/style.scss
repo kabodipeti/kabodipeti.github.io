@@ -12,15 +12,13 @@
 }
 body{
     background-image: url("../../img/mosogep_hatter.png");
-    background-color: white;
+   
     background-attachment: fixed;
     background-repeat: repeat-y;
-    
     transition: 0s linear;
     transition-property: background-position;
     background-position: 50% 0;   
     background-size: cover;
-    scroll-behavior: smooth;
 
 }  
 .normal_button{
@@ -146,9 +144,16 @@ a, a:visited {
 #menu_button{
     width: 30px;
 }
-@import "queries";
 section {
     width: 100%;
     margin-top: 40px;
     float: left; 
 }
+
+#up_nav{
+    position: fixed; 
+    right: 5px; 
+    bottom: 5px;
+    width: 50px;
+}
+@import "queries";

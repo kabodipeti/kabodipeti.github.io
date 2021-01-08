@@ -34,7 +34,6 @@ body {
 
 body {
   background-image: url("../../img/mosogep_hatter.png");
-  background-color: white;
   background-attachment: fixed;
   background-repeat: repeat-y;
   -webkit-transition: 0s linear;
@@ -43,7 +42,6 @@ body {
   transition-property: background-position;
   background-position: 50% 0;
   background-size: cover;
-  scroll-behavior: smooth;
 }
 
 .normal_button {
@@ -215,6 +213,19 @@ a, a:visited {
   width: 30px;
 }
 
+section {
+  width: 100%;
+  margin-top: 40px;
+  float: left;
+}
+
+#up_nav {
+  position: fixed;
+  right: 5px;
+  bottom: 5px;
+  width: 50px;
+}
+
 @media screen and (min-width: 768px) {
   .col-1 {
     width: 8.33%;
@@ -266,7 +277,7 @@ a, a:visited {
     margin-top: 100px;
   }
   #up_nav {
-    width: 100px;
+    max-width: 30px;
   }
   section {
     width: 100%;
@@ -278,11 +289,9 @@ a, a:visited {
   .card div {
     font-size: 1.5em;
   }
-}
-
-section {
-  width: 100%;
-  margin-top: 40px;
-  float: left;
+  #up_nav {
+    width: 30px;
+    height: 30px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
