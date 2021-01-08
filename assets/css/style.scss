@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
 
 @import "variables";
+@import "animations";
 @import "mixins";
 @import "misc";
 
@@ -114,6 +115,9 @@ a, a:visited {
 }
 .card{
     @include borderedDiv($bg_color:black, $style: solid, $rad: 30px);
+    animation-name: fadeIn;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
     width: 200;
     height: 200;
     color: $SecFontColor;
