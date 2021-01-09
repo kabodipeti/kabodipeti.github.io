@@ -138,11 +138,12 @@ a, a:visited {
 #menu_button{
     width: 30px;
 } 
-section {
+section, #home {
     width: 100%;
     // margin-top: 40px;
+   height: 100%;
     float: left; 
-    height: 100vw;
+    
 }
 
 #up_nav{

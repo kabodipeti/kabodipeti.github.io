@@ -1,4 +1,4 @@
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 769px) {
   .col-1 {
     width: 8.33%;
   }
@@ -71,7 +71,7 @@
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
   .mob-1 {
     width: 8.33%;
   }
@@ -113,6 +113,9 @@
   }
   .card {
     padding: 15px;
+  }
+  #header, #header * {
+    padding: 0px;
   }
 }
 /*# sourceMappingURL=queries.css.map */
